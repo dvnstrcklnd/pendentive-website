@@ -49,11 +49,19 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 500;
             letter-spacing: 0.01em;
             color: var(--color-text);
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
         }
 
         /* Hero */
@@ -208,7 +216,10 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">Pendentive</div>
+            <div class="logo">
+                <img src="logo.png" alt="Pendentive logo">
+                Pendentive
+            </div>
         </div>
     </header>
 
