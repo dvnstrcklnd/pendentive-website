@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendentive Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #111827;
+            --color-text-muted: #4b5563;
+            --color-accent: #6366f1;
+            --color-border: #d1d5db;
+            --font-display: 'IBM Plex Serif', Georgia, serif;
+            --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            color: var(--color-text);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 6rem 0 5rem;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.25rem, 5vw, 3rem);
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 2rem;
+            max-width: 700px;
+        }
+
+        .hero-intro {
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-statement {
+            font-size: 1.05rem;
+            max-width: 600px;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        section h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+        }
+
+        section p {
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+        }
+
+        section p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* Services */
+        .services-list {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .service-item p {
+            font-size: 0.95rem;
+        }
+
+        /* Approach */
+        .approach-highlight {
+            border-left: 2px solid var(--color-border);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        /* About */
+        .credentials {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-top: 1rem;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            margin-bottom: 2rem;
+            color: var(--color-text-muted);
+        }
+
+        .cta-button {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--color-bg);
+            background-color: var(--color-text);
+            padding: 1rem 2.5rem;
+            border-radius: 3px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-accent);
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 0;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .hero {
+                padding: 4rem 0 3rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .cta {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Pendentive</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The architectural leadership to bridge R&D's critical gaps</h1>
+                <p class="hero-intro">
+                    In architecture, a pendentive is a smooth structural transition between a square space and a circular dome—a simple, elegant innovation that allowed disparate elements to become a unified whole.
+                </p>
+                <p class="hero-statement">
+                    Today's R&D depends on bringing together laboratory methods, manufacturing processes, data systems, and AI models. Even when these components are highly effective individually, integrating them creates friction, instability, and information loss. We provide the strategic leadership to solve these problems.
+                </p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <h3>Strategy</h3>
+                        <p>AI and data strategy, R&D roadmaps, and technology architecture aligned to business and organizational needs through frameworks like Domain-Driven Design.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Leadership</h3>
+                        <p>Fractional and interim executive roles, or engagement-based leadership for complex, multi-stakeholder initiatives spanning science, technology, and operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach">
+            <div class="container">
+                <h2>Approach</h2>
+                <p>
+                    We follow the "Monkey and the Pedestal" principle: when training a monkey to juggle while standing on a pedestal, start with the monkey. Building pedestals feels like progress but doesn't address the hard problem.
+                </p>
+                <p class="approach-highlight">
+                    We identify the riskiest assumptions and most difficult challenges first—then build the infrastructure to support proven solutions.
+                </p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    Pendentive Consulting is led by Devin Strickland, a scientist and technologist with two decades of experience at the intersection of laboratory research, software engineering, and organizational strategy.
+                </p>
+                <p class="credentials">
+                    PhD, Biochemistry and Molecular Biology, University of Chicago. Former DARPA program lead, biotech R&D scientist, and enterprise AI architect. Published researcher in protein engineering and cell biology.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Let's talk</h2>
+                <p>Ready to bridge the gaps in your R&D organization?</p>
+                <a href="#" class="cta-button">Schedule a Call</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Pendentive Consulting · Richmond, VA</p>
+        </div>
+    </footer>
+</body>
+</html>
