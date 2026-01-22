@@ -1,53 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing - Pendentive Consulting</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/logo-dark.png" alt="Pendentive logo">
-                Pendentive
-            </a>
-            <nav>
-                <a href="writing.html" class="active">Writing</a>
-                <a href="reading.html">Reading</a>
-            </nav>
+---
+layout: default
+title: Writing
+nav: writing
+---
+<section class="page-header">
+    <div class="container">
+        <h1>Writing</h1>
+        <p>Occasional writing on technology strategy, AI in science, and related topics.</p>
+    </div>
+</section>
+
+<section class="articles">
+    <div class="container">
+        {% for essay in site.essays %}
+        <div class="article-item">
+            <h2>{{ essay.title }}</h2>
+            <p class="subtitle">{{ essay.subtitle }}</p>
+            <p>{{ essay.excerpt }}</p>
+            <a href="{{ essay.url | relative_url }}">Read more &rarr;</a>
         </div>
-    </header>
-
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Writing</h1>
-                <p>Occasional writing on technology strategy, AI in science, and related topics.</p>
-            </div>
-        </section>
-
-        <section class="articles">
-            <div class="container">
-                <div class="article-item">
-                    <h2>Dimensions of Machine Usefulness in Science</h2>
-                    <p class="subtitle">A framework for evaluating AI-enabled science by human capability expansion</p>
-                    <p>Existing frameworks for self-driving laboratories measure progress by how much human involvement can be removed. This essay proposes an alternative: measuring AI-enabled science by the new human capabilities it creates, not the human tasks it eliminates—and recognizing that these capabilities vary along multiple independent dimensions, not a single axis of autonomy.</p>
-                    <a href="dimensions-of-machine-usefulness.html">Read more &rarr;</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Pendentive Consulting &middot; Richmond, VA</p>
-        </div>
-    </footer>
-</body>
-</html>
+        {% endfor %}
+    </div>
+</section>

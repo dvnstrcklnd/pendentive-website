@@ -1,132 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading - Pendentive Consulting</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/logo-dark.png" alt="Pendentive logo">
-                Pendentive
-            </a>
-            <nav>
-                <a href="writing.html">Writing</a>
-                <a href="reading.html" class="active">Reading</a>
-            </nav>
+---
+layout: default
+title: Reading
+nav: reading
+---
+<section class="page-header">
+    <div class="container">
+        <h1>Reading</h1>
+        <p>Books and essays that have shaped how I think about technology, organizations, and science.</p>
+    </div>
+</section>
+
+<section class="reading-section">
+    <div class="container">
+        <h2>On Technology and Society</h2>
+        <div class="reading-list">
+            <div class="reading-item">
+                <h3>Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity</h3>
+                <p class="author">Daron Acemoglu and Simon Johnson</p>
+                <p>The core argument: technological progress doesn't automatically produce broad-based prosperity. What matters is how technologies are deployed—whether they augment human capability and create new tasks, or merely substitute for labor without creating commensurate value.</p>
+            </div>
+            <div class="reading-item">
+                <h3>AI as Normal Technology</h3>
+                <p class="author">Henry Farrell and Cosma Shalizi &middot; <a href="https://knightcolumbia.org/content/ai-as-normal-technology">Knight Columbia</a></p>
+                <p>A skeptical, historically-grounded perspective on AI exceptionalism.</p>
+            </div>
+            <div class="reading-item">
+                <h3>LLMs as a New Kind of Cultural Technology</h3>
+                <p class="author">Alison Gopnik et al., Science (2025) &middot; <a href="https://henryfarrell.net/wp-content/uploads/2025/03/Science-Accepted-Version.pdf">PDF</a></p>
+                <p>Large language models understood not as intelligent agents but as a new way to access accumulated human knowledge—analogous to writing, print, or markets.</p>
+            </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Reading</h1>
-                <p>Books and essays that have shaped how I think about technology, organizations, and science.</p>
+<section class="reading-section">
+    <div class="container">
+        <h2>On Organizations and Systems</h2>
+        <div class="reading-list">
+            <div class="reading-item">
+                <h3>Team Topologies</h3>
+                <p class="author">Matthew Skelton and Manuel Pais</p>
+                <p>How to design team structures that align with system architecture. The key insight: organizational structure and technical architecture are not independent choices.</p>
             </div>
-        </section>
-
-        <section class="reading-section">
-            <div class="container">
-                <h2>On Technology and Society</h2>
-                <div class="reading-list">
-                    <div class="reading-item">
-                        <h3>Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity</h3>
-                        <p class="author">Daron Acemoglu and Simon Johnson</p>
-                        <p>The core argument: technological progress doesn't automatically produce broad-based prosperity. What matters is how technologies are deployed—whether they augment human capability and create new tasks, or merely substitute for labor without creating commensurate value.</p>
-                    </div>
-                    <div class="reading-item">
-                        <h3>AI as Normal Technology</h3>
-                        <p class="author">Henry Farrell and Cosma Shalizi &middot; <a href="https://knightcolumbia.org/content/ai-as-normal-technology">Knight Columbia</a></p>
-                        <p>A skeptical, historically-grounded perspective on AI exceptionalism.</p>
-                    </div>
-                    <div class="reading-item">
-                        <h3>LLMs as a New Kind of Cultural Technology</h3>
-                        <p class="author">Alison Gopnik et al., Science (2025) &middot; <a href="https://henryfarrell.net/wp-content/uploads/2025/03/Science-Accepted-Version.pdf">PDF</a></p>
-                        <p>Large language models understood not as intelligent agents but as a new way to access accumulated human knowledge—analogous to writing, print, or markets.</p>
-                    </div>
-                </div>
+            <div class="reading-item">
+                <h3>Domain-Driven Design</h3>
+                <p class="author">Eric Evans &middot; <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Wikipedia overview</a></p>
+                <p>Aligning software architecture with business domains. Essential for any integration work in complex organizations.</p>
             </div>
-        </section>
-
-        <section class="reading-section">
-            <div class="container">
-                <h2>On Organizations and Systems</h2>
-                <div class="reading-list">
-                    <div class="reading-item">
-                        <h3>Team Topologies</h3>
-                        <p class="author">Matthew Skelton and Manuel Pais</p>
-                        <p>How to design team structures that align with system architecture. The key insight: organizational structure and technical architecture are not independent choices.</p>
-                    </div>
-                    <div class="reading-item">
-                        <h3>Domain-Driven Design</h3>
-                        <p class="author">Eric Evans &middot; <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Wikipedia overview</a></p>
-                        <p>Aligning software architecture with business domains. Essential for any integration work in complex organizations.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reading-section">
-            <div class="container">
-                <h2>On Defense and Technology Policy</h2>
-                <div class="reading-list">
-                    <div class="reading-item">
-                        <h3>The Pentagon's Brain: An Uncensored History of DARPA</h3>
-                        <p class="author">Annie Jacobsen</p>
-                        <p>How the institution that invented the internet, stealth aircraft, and GPS actually works—and how it fails.</p>
-                    </div>
-                    <div class="reading-item">
-                        <h3>Army of None: Autonomous Weapons and the Future of War</h3>
-                        <p class="author">Paul Scharre</p>
-                        <p>The clearest thinking I've encountered on autonomy, human judgment, and machine decision-making in high-stakes contexts.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reading-section">
-            <div class="container">
-                <h2>On AI and Alignment</h2>
-                <div class="reading-list">
-                    <div class="reading-item">
-                        <h3>The Alignment Problem: Machine Learning and Human Values</h3>
-                        <p class="author">Brian Christian</p>
-                        <p>A comprehensive survey of the challenges in making AI systems behave as intended. Useful background for anyone evaluating AI investments.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reading-section">
-            <div class="container">
-                <h2>On Thinking and Communication</h2>
-                <div class="reading-list">
-                    <div class="reading-item">
-                        <h3>Thinking, Fast and Slow</h3>
-                        <p class="author">Daniel Kahneman</p>
-                        <p>The foundational text on cognitive biases and the two-systems model of human reasoning. Essential for understanding why smart people make predictable mistakes.</p>
-                    </div>
-                    <div class="reading-item">
-                        <h3>Supercommunicators: How to Unlock the Secret Language of Connection</h3>
-                        <p class="author">Charles Duhigg</p>
-                        <p>Practical guidance on how conversations actually work—useful for consulting, leadership, and any role that involves understanding what people actually need.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Pendentive Consulting &middot; Richmond, VA</p>
         </div>
-    </footer>
-</body>
-</html>
+    </div>
+</section>
+
+<section class="reading-section">
+    <div class="container">
+        <h2>On Defense and Technology Policy</h2>
+        <div class="reading-list">
+            <div class="reading-item">
+                <h3>The Pentagon's Brain: An Uncensored History of DARPA</h3>
+                <p class="author">Annie Jacobsen</p>
+                <p>How the institution that invented the internet, stealth aircraft, and GPS actually works—and how it fails.</p>
+            </div>
+            <div class="reading-item">
+                <h3>Army of None: Autonomous Weapons and the Future of War</h3>
+                <p class="author">Paul Scharre</p>
+                <p>The clearest thinking I've encountered on autonomy, human judgment, and machine decision-making in high-stakes contexts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reading-section">
+    <div class="container">
+        <h2>On AI and Alignment</h2>
+        <div class="reading-list">
+            <div class="reading-item">
+                <h3>The Alignment Problem: Machine Learning and Human Values</h3>
+                <p class="author">Brian Christian</p>
+                <p>A comprehensive survey of the challenges in making AI systems behave as intended. Useful background for anyone evaluating AI investments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reading-section">
+    <div class="container">
+        <h2>On Thinking and Communication</h2>
+        <div class="reading-list">
+            <div class="reading-item">
+                <h3>Thinking, Fast and Slow</h3>
+                <p class="author">Daniel Kahneman</p>
+                <p>The foundational text on cognitive biases and the two-systems model of human reasoning. Essential for understanding why smart people make predictable mistakes.</p>
+            </div>
+            <div class="reading-item">
+                <h3>Supercommunicators: How to Unlock the Secret Language of Connection</h3>
+                <p class="author">Charles Duhigg</p>
+                <p>Practical guidance on how conversations actually work—useful for consulting, leadership, and any role that involves understanding what people actually need.</p>
+            </div>
+        </div>
+    </div>
+</section>

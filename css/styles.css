@@ -460,7 +460,8 @@ section p:last-of-type {
     margin: 2.5rem 0;
 }
 
-/* Comparison Table */
+/* Tables (markdown-generated and .comparison-table) */
+.article-content table,
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
@@ -468,6 +469,8 @@ section p:last-of-type {
     font-size: 0.9rem;
 }
 
+.article-content th,
+.article-content td,
 .comparison-table th,
 .comparison-table td {
     padding: 0.75rem;
@@ -476,6 +479,7 @@ section p:last-of-type {
     color: var(--color-text-muted);
 }
 
+.article-content th,
 .comparison-table th {
     font-family: var(--font-display);
     font-weight: 500;
@@ -483,6 +487,8 @@ section p:last-of-type {
     background-color: #f1f5f9;
 }
 
+.article-content th:first-child,
+.article-content td:first-child,
 .comparison-table th:first-child,
 .comparison-table td:first-child {
     font-weight: 500;

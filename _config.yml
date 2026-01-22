@@ -1,0 +1,25 @@
+title: Pendentive Consulting
+description: Technology strategy for R&D
+url: https://pendentiveconsulting.com
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+
+permalink: pretty
+
+collections:
+  essays:
+    output: true
+    permalink: /:name
+
+exclude:
+  - copy/pendentive_website_copy.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .claude/
+  - vendor

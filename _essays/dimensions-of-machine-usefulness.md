@@ -1,6 +1,10 @@
-# Dimensions of Machine Usefulness in Science
-
-## A Framework for Evaluating AI-Enabled Science by Human Capability Expansion
+---
+layout: article
+title: "Dimensions of Machine Usefulness in Science"
+subtitle: "A framework for evaluating AI-enabled science by human capability expansion"
+excerpt: "Existing frameworks for self-driving laboratories measure progress by how much human involvement can be removed. This essay proposes an alternative: measuring AI-enabled science by the new human capabilities it creates, not the human tasks it eliminates."
+nav: writing
+---
 
 ### Acemoglu and Johnson on Machine Usefulness
 
@@ -24,20 +28,20 @@ This framework proposes an alternative: measuring AI-enabled science by the **ne
 
 A tool may score high on some dimensions and low on others. There is no implied progression—excellence along one dimension does not require or lead to excellence along others.
 
-### 1\. Friction Reduction
+### 1. Friction Reduction
 
 **Can we do the same work with less effort?**
 
 *Characteristics:*
 
-- Scientists do the same work, but with less friction  
-- Primary value: time savings, reduced drudgery  
+- Scientists do the same work, but with less friction
+- Primary value: time savings, reduced drudgery
 - Human judgment remains central to all decisions
 
 *Examples:*
 
-- Automated pipetting that executes human-designed protocols  
-- Data visualization tools that format results for human interpretation  
+- Automated pipetting that executes human-designed protocols
+- Data visualization tools that format results for human interpretation
 - Literature search that surfaces relevant papers faster
 
 *Evaluation question:* Would removing this tool change *what* science gets done, or just *how fast*?
@@ -46,20 +50,20 @@ A tool may score high on some dimensions and low on others. There is no implied 
 
 ---
 
-### 2\. Reach Extension
+### 2. Reach Extension
 
 **Can we access experimental territory that was previously impractical?**
 
 *Characteristics:*
 
-- Scientists can now do things that were previously impractical  
-- Opens new experimental territory rather than accelerating existing work  
+- Scientists can now do things that were previously impractical
+- Opens new experimental territory rather than accelerating existing work
 - Human judgment guides direction; machine extends reach
 
 *Examples:*
 
-- High-throughput screening that makes combinatorial exploration feasible  
-- Robotic manipulation of hazardous or extreme-condition samples  
+- High-throughput screening that makes combinatorial exploration feasible
+- Robotic manipulation of hazardous or extreme-condition samples
 - Continuous monitoring that captures dynamics humans would miss
 
 *Evaluation question:* Are scientists asking questions they wouldn't have asked before?
@@ -68,20 +72,20 @@ A tool may score high on some dimensions and low on others. There is no implied 
 
 ---
 
-### 3\. Pattern Surfacing
+### 3. Pattern Surfacing
 
 **Can we perceive structures we couldn't see before?**
 
 *Characteristics:*
 
-- Identifies patterns, correlations, or anomalies across scales humans can't process  
-- Outputs require human interpretation to become knowledge  
+- Identifies patterns, correlations, or anomalies across scales humans can't process
+- Outputs require human interpretation to become knowledge
 - Creates new objects for human reasoning
 
 *Examples:*
 
-- Dimensionality reduction revealing clusters in high-dimensional data  
-- Anomaly detection flagging unexpected results for human investigation  
+- Dimensionality reduction revealing clusters in high-dimensional data
+- Anomaly detection flagging unexpected results for human investigation
 - Cross-dataset integration connecting disparate findings
 
 *Evaluation question:* Does this generate hypotheses that surprise domain experts?
@@ -90,20 +94,20 @@ A tool may score high on some dimensions and low on others. There is no implied 
 
 ---
 
-### 4\. Repertoire Expansion
+### 4. Repertoire Expansion
 
 **Can we access expertise that was previously siloed or tacit?**
 
 *Characteristics:*
 
-- Aggregates expertise that no single human possesses  
-- Makes implicit knowledge explicit and executable  
+- Aggregates expertise that no single human possesses
+- Makes implicit knowledge explicit and executable
 - Enables non-experts to leverage expert-level protocols
 
 *Examples:*
 
-- LLM-assisted protocol generation drawing on literature-wide best practices  
-- Cross-domain suggestion systems (e.g., recombinase biochemistry → cloning optimization)  
+- LLM-assisted protocol generation drawing on literature-wide best practices
+- Cross-domain suggestion systems (e.g., recombinase biochemistry → cloning optimization)
 - Troubleshooting assistants encoding accumulated lab wisdom
 
 *Evaluation question:* Can a competent scientist now do what previously required rare specialized expertise?
@@ -112,20 +116,20 @@ A tool may score high on some dimensions and low on others. There is no implied 
 
 ---
 
-### 5\. Judgment Amplification
+### 5. Judgment Amplification
 
 **Can we make better decisions under complexity?**
 
 *Characteristics:*
 
-- Handles complexity, uncertainty, or scale beyond human cognitive limits  
-- Human values, priorities, and risk tolerance remain upstream  
+- Handles complexity, uncertainty, or scale beyond human cognitive limits
+- Human values, priorities, and risk tolerance remain upstream
 - Machine provides decision support, not decision replacement
 
 *Examples:*
 
-- Experimental design optimization under complex constraints  
-- Uncertainty quantification that makes honest confidence intervals tractable  
+- Experimental design optimization under complex constraints
+- Uncertainty quantification that makes honest confidence intervals tractable
 - Scenario modeling that reveals consequences of strategic choices
 
 *Evaluation question:* Are scientists making *better* decisions, or just *faster* ones?
@@ -134,20 +138,20 @@ A tool may score high on some dimensions and low on others. There is no implied 
 
 ---
 
-### 6\. Cognitive Scaffolding
+### 6. Cognitive Scaffolding
 
 **Can we reason more reliably and share that reasoning?**
 
 *Characteristics:*
 
-- Externalizes and disciplines human reasoning  
-- Makes thinking visible, revisable, and transmissible  
+- Externalizes and disciplines human reasoning
+- Makes thinking visible, revisable, and transmissible
 - Prevents errors by structuring cognition, not by replacing it
 
 *Examples:*
 
-- SnapGene: visualization and planning tools that ensure scientists know the full properties of the DNA they're working with  
-- Electronic lab notebooks that create records as a byproduct of planning  
+- SnapGene: visualization and planning tools that ensure scientists know the full properties of the DNA they're working with
+- Electronic lab notebooks that create records as a byproduct of planning
 - Version control systems that make the history of reasoning accessible
 
 *Evaluation question:* Does this make individual reasoning more robust *and* make that reasoning shareable across people and time?
@@ -202,4 +206,4 @@ The machine usefulness framing asks: "How much more can the human do?" and recog
 
 This reframing matters because it changes what we optimize for. The autonomy framing risks creating sophisticated infrastructure that concentrates benefit and displaces workers without commensurate productivity gains—so-so automation dressed up as progress. The machine usefulness framing aims for technologies that expand human capability, create new tasks, and generate broad-based benefit.
 
-The best AI-enabled science will be measured not by how autonomous the lab becomes, but by what scientists—and ultimately, all of us—can do that we couldn't do before.  
+The best AI-enabled science will be measured not by how autonomous the lab becomes, but by what scientists—and ultimately, all of us—can do that we couldn't do before.
