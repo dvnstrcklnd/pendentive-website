@@ -1,0 +1,540 @@
+/* ============================================
+   Pendentive Consulting - Main Stylesheet
+   ============================================ */
+
+/* CSS Variables */
+:root {
+    --color-bg: #f8fafc;
+    --color-text: #0f172a;
+    --color-text-muted: #475569;
+    --color-accent: #0ea5e9;
+    --color-border: transparent;
+    --font-display: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-body: 'IBM Plex Mono', monospace;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+header {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 10vw, 4.25rem);
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.logo img {
+    height: clamp(26.5px, 1.765em, 75px);
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--color-text);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+/* ============================================
+   Home Page - Hero Section
+   ============================================ */
+.hero {
+    padding: 2rem 0 1.5rem;
+}
+
+.hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.hero-intro {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-statement {
+    font-size: 1.05rem;
+    max-width: 600px;
+}
+
+/* ============================================
+   Home Page - Sections
+   ============================================ */
+section {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+section p {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+section p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Services */
+.services-list {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.service-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.service-item p {
+    font-size: 0.95rem;
+}
+
+/* Philosophy */
+.philosophy p {
+    margin-bottom: 1rem;
+}
+
+.philosophy p:last-of-type {
+    margin-bottom: 0;
+}
+
+.philosophy em {
+    font-style: italic;
+    color: var(--color-text);
+}
+
+/* About */
+.subsection-heading {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+
+.credentials-list {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-left: 1.25rem;
+}
+
+.credentials-list li {
+    margin-bottom: 0.35rem;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+    color: var(--color-text-muted);
+}
+
+.cta-button {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-bg);
+    background-color: var(--color-text);
+    padding: 1rem 2.5rem;
+    border-radius: 3px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+/* ============================================
+   Page Header (Writing, Reading)
+   ============================================ */
+.page-header {
+    padding: 2rem 0 1.5rem;
+}
+
+.page-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    max-width: 600px;
+}
+
+/* ============================================
+   Writing Page - Articles
+   ============================================ */
+.articles {
+    padding: 1.5rem 0;
+}
+
+.article-item {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.article-item:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.article-item h2 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.article-item .subtitle {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.article-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.article-item a {
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article-item a:hover {
+    color: var(--color-text);
+}
+
+/* ============================================
+   Reading Page
+   ============================================ */
+.reading-section {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.reading-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: var(--color-text);
+}
+
+.reading-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.reading-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: var(--color-text);
+}
+
+.reading-item .author {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.reading-item .author a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reading-item .author a:hover {
+    color: var(--color-text);
+}
+
+.reading-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* ============================================
+   Article Page (Essays)
+   ============================================ */
+.article-header {
+    padding: 2rem 0 1.5rem;
+}
+
+.article-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.article-header .subtitle {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--color-text);
+}
+
+.article-content {
+    padding: 1.5rem 0 3rem;
+}
+
+.article-content p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.article-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.article-content h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+
+.article-content ul,
+.article-content ol {
+    color: var(--color-text-muted);
+    margin-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+}
+
+.article-content em {
+    font-style: italic;
+}
+
+.article-content strong {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.article-content hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 2.5rem 0;
+}
+
+/* Comparison Table */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    color: var(--color-text-muted);
+}
+
+.comparison-table th {
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: var(--color-text);
+    background-color: #f1f5f9;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero {
+        padding: 2rem 0 1.5rem;
+    }
+
+    section {
+        padding: 1.5rem 0;
+    }
+
+    .cta {
+        padding: 1.5rem 0;
+    }
+
+    .page-header {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .articles {
+        padding: 1.5rem 0;
+    }
+
+    .reading-section {
+        padding: 1.5rem 0;
+    }
+
+    .article-header {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .article-content {
+        padding: 1.5rem 0 2rem;
+    }
+
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.5rem;
+    }
+}
