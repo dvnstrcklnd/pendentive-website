@@ -3,6 +3,8 @@ description: Technology strategy for R&D
 url: https://pendentiveconsulting.com
 baseurl: ""
 
+theme: null
+
 markdown: kramdown
 kramdown:
   input: GFM
