@@ -19,6 +19,7 @@
     --color-border-accent: rgba(212, 175, 55, 0.3);
     --font-display: 'Plus Jakarta Sans', sans-serif;
     --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-body-serif: 'Merriweather', Georgia, serif;
     --font-mono: 'JetBrains Mono', monospace;
     --grid-line: rgba(255, 255, 255, 0.025);
 }
@@ -261,7 +262,9 @@ footer p {
 
 .hero-intro,
 .hero-text {
-    font-size: 1rem;
+    font-family: var(--font-body-serif);
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--color-text-muted);
     max-width: 600px;
     margin-bottom: 1.5rem;
@@ -328,6 +331,9 @@ section h2 {
 }
 
 section p {
+    font-family: var(--font-body-serif);
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--color-text-muted);
     margin-bottom: 1.5rem;
 }
@@ -397,7 +403,9 @@ section p:last-of-type {
 }
 
 .service-card p {
-    font-size: 0.9rem;
+    font-family: var(--font-body-serif);
+    font-size: 0.95rem;
+    line-height: 1.7;
     color: var(--color-text-muted);
     margin-bottom: 0;
 }
@@ -450,7 +458,9 @@ section p:last-of-type {
 }
 
 .service-item p {
-    font-size: 0.9rem;
+    font-family: var(--font-body-serif);
+    font-size: 0.95rem;
+    line-height: 1.7;
     color: var(--color-text-muted);
     margin-bottom: 0;
 }
@@ -774,6 +784,10 @@ section p:last-of-type {
     padding: 2rem 0 1.5rem;
 }
 
+.article-header .container {
+    max-width: 700px;
+}
+
 .article-header h1 {
     font-family: var(--font-display);
     font-size: clamp(1.75rem, 5vw, 2.25rem);
@@ -810,9 +824,17 @@ section p:last-of-type {
     padding: 1.5rem 0 4rem;
 }
 
+.article-content .container {
+    max-width: 700px;
+}
+
 .article-content p {
-    color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+    font-family: var(--font-body-serif);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.9;
+    color: var(--color-text);
+    margin-bottom: 1.75rem;
 }
 
 .article-content h2 {
@@ -844,21 +866,25 @@ section p:last-of-type {
 
 .article-content ul,
 .article-content ol {
-    color: var(--color-text-muted);
-    margin-left: 1.25rem;
-    margin-bottom: 1.5rem;
+    font-family: var(--font-body-serif);
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: var(--color-text);
+    margin-left: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
 .article-content li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .article-content em {
     font-style: italic;
+    color: var(--color-accent);
 }
 
 .article-content strong {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-text);
 }
 
@@ -913,8 +939,10 @@ section p:last-of-type {
 }
 
 .article-content blockquote p {
-    font-family: var(--font-serif);
+    font-family: var(--font-body-serif);
+    font-size: 1.125rem;
     font-style: italic;
+    line-height: 1.8;
     color: var(--color-text);
     margin-bottom: 0;
 }
