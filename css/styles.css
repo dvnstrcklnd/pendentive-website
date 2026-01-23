@@ -248,6 +248,10 @@ footer p {
     color: var(--color-text);
 }
 
+.hero h1 .hero-subhead {
+    font-size: 0.9em;
+}
+
 .hero h1 em {
     font-family: var(--font-serif);
     font-style: italic;
