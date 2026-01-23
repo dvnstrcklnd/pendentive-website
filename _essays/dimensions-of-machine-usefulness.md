@@ -8,7 +8,7 @@ nav: writing
 
 ### Acemoglu and Johnson on Machine Usefulness
 
-In *Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity* (2023), economists Daron Acemoglu and Simon Johnson argue that technological progress does not automatically produce broad-based prosperity. What matters is *how* technologies are deployed. They distinguish between genuinely useful technologies—which augment human capabilities, create new tasks for humans to perform, and generate productivity gains that flow broadly—and "so-so automation," which displaces workers without creating commensurate new value. Self-checkout kiosks are their canonical example: they eliminate cashier jobs but don't dramatically improve the shopping experience, primarily shifting labor costs from corporations to customers while degrading service quality. The question for any new technology is not "can it replace human labor?" but "does it expand what humans can do, and who benefits?"
+In *Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity* (2023), economists Daron Acemoglu and Simon Johnson argue that technological progress does not automatically produce broad-based prosperity. What matters is *how* technologies are deployed. They distinguish between "machine usefulness" and "so-so automation." The former refers to genuinely useful technologies  which augment human capabilities, create new tasks for humans to perform, and generate productivity gains that flow broadly. The latter merely displaces workers without creating commensurate new value. Self-checkout kiosks are the canonical example of so-so automation: they eliminate cashier jobs but don't dramatically improve the shopping experience, primarily shifting labor costs from corporations to customers while degrading service quality. The question for any new technology is not "can it replace human labor?" but "does it expand what humans can do, and who benefits?"
 
 ### The Problem with Autonomy Frameworks
 
@@ -16,9 +16,9 @@ Existing frameworks for self-driving laboratories measure progress by how much h
 
 These frameworks share two questionable assumptions:
 
-**First, they conflate technical achievement with value creation.** "Can the machine do this without human intervention?" is a different question from "Does this advance science, create new human capabilities, or generate broad-based benefit?" History suggests technologies that maximize human displacement often create what Acemoglu and Johnson call "so-so automation"—systems that substitute for human labor at roughly equivalent performance while redistributing value rather than creating it.
+**First, they conflate technical achievement with value creation.** "Can the machine do this without human intervention?" is a different question from "Does this advance science, create new human capabilities, or generate broad-based benefit?" History suggests technologies that substitute for human labor at roughly equivalent performance redistribute value rather than creating it.
 
-**Second, they impose false linearity.** Autonomy frameworks present progress as a single journey from Level 0 to Level 5, where each stage subsumes the previous. But the actual landscape of useful scientific tools is multidimensional. SnapGene—software that externalizes and disciplines molecular biologists' reasoning about DNA constructs—is enormously valuable without being "higher" on any autonomy scale. It's not "Level 2" waiting to become "Level 4." It's excellent along dimensions that autonomy frameworks don't measure at all.
+**Second, they impose false linearity.** Autonomy frameworks present progress as a single journey from Level 0 to Level 5, where each stage subsumes the previous. But the actual landscape of useful scientific tools is multidimensional. I've always been a huge fan of the software SnapGene because it externalizes and disciplines molecular biologists' reasoning about DNA constructs. It is enormously valuable without being "higher" on any autonomy scale. It's not "Level 2" waiting to become "Level 4." It's excellent along dimensions that autonomy frameworks don't measure at all.
 
 This framework proposes an alternative: measuring AI-enabled science by the **new human capabilities it creates**, not the human tasks it eliminates—and recognizing that these capabilities vary along multiple independent dimensions, not a single axis.
 
@@ -44,7 +44,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Data visualization tools that format results for human interpretation
 - Literature search that surfaces relevant papers faster
 
-*Evaluation question:* Would removing this tool change *what* science gets done, or just *how fast*?
+*Key question:* Would removing this tool change *what* science gets done, or just *how fast*?
 
 *Risk:* Can become so-so automation if it primarily displaces workers without enabling new science.
 
@@ -66,7 +66,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Robotic manipulation of hazardous or extreme-condition samples
 - Continuous monitoring that captures dynamics humans would miss
 
-*Evaluation question:* Are scientists asking questions they wouldn't have asked before?
+*Key question:* Are scientists asking questions they wouldn't have asked before?
 
 *Value creation:* New experimental territory creates new opportunities for insight, new specializations, new translational pathways—new human tasks.
 
@@ -88,7 +88,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Anomaly detection flagging unexpected results for human investigation
 - Cross-dataset integration connecting disparate findings
 
-*Evaluation question:* Does this generate hypotheses that surprise domain experts?
+*Key question:* Does this generate hypotheses that surprise domain experts?
 
 *Value creation:* New patterns create new questions, new subfields, new interpretive expertise—humans become specialists in making sense of machine-surfaced structure.
 
@@ -110,7 +110,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Cross-domain suggestion systems (e.g., recombinase biochemistry → cloning optimization)
 - Troubleshooting assistants encoding accumulated lab wisdom
 
-*Evaluation question:* Can a competent scientist now do what previously required rare specialized expertise?
+*Key question:* Can a competent scientist now do what previously required rare specialized expertise?
 
 *Value creation:* Democratizes capability, lowers barriers to entry, creates demand for new integrative roles (people who can combine newly-accessible techniques in novel ways). The human task shifts from *possessing* rare expertise to *combining* newly-accessible capabilities.
 
@@ -132,7 +132,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Uncertainty quantification that makes honest confidence intervals tractable
 - Scenario modeling that reveals consequences of strategic choices
 
-*Evaluation question:* Are scientists making *better* decisions, or just *faster* ones?
+*Key question:* Are scientists making *better* decisions, or just *faster* ones?
 
 *Value creation:* Creates demand for humans skilled in specifying values, interpreting tradeoffs, and exercising judgment at higher levels of abstraction. The hard problems remain human problems.
 
@@ -154,7 +154,7 @@ A tool may score high on some dimensions and low on others. There is no implied 
 - Electronic lab notebooks that create records as a byproduct of planning
 - Version control systems that make the history of reasoning accessible
 
-*Evaluation question:* Does this make individual reasoning more robust *and* make that reasoning shareable across people and time?
+*Key question:* Does this make individual reasoning more robust and make that reasoning shareable across people and time?
 
 *Value creation:* Knowledge accumulates rather than dissipating. Errors get caught earlier. Expertise becomes teachable. The human task shifts from *remembering* to *reasoning*.
 
